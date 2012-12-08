@@ -19,7 +19,7 @@
 		</div>
 	  
 		<div class="span9">
-		  <form action="fungsitambah-anggota.php" method="post" name="tambah anggota">
+		  <form action="../projects-srikandi/function/fungsiaddanggota.php" method="post" name="tambah anggota">
 			<h3><strong>Formulir Tambah Anggota</strong></h3>
 			<table width="507">
 			<tr>
@@ -37,7 +37,7 @@
 			</tr>
 			<tr>
 			  <td><label>Password</label>&nbsp;</td>
-			  <td><input type="text" name="passwordmember" id="passwordmember" />&nbsp;</td>
+			  <td><input type="password" name="passwordmember" id="passwordmember" />&nbsp;</td>
 			</tr>
 			<tr>
 			  <td><label>Email</label>&nbsp;</td>
@@ -60,7 +60,7 @@
 			<p>
 			<input type="checkbox" name="setuju" id="setuju" />
 			Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
-			<button type="submit" class="btn btn-primary">Daftar</button>
+			<input type="submit" class="btn btn-primary" name="button" value="Daftar">
 		  </form>
 		</div>
 	  </div>
