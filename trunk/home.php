@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Sistem Informasi Kesenian Daerah Indonesia</title>
-    <link rel="shortcut icon" href="icon/icon.png"/>
+    <link rel="shortcut icon" href="img/icon.png"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>

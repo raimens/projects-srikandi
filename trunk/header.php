@@ -3,7 +3,7 @@
 	<nav class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a href="home.php" class="brand"><img src="icon/logo-srikandi.png" alt="srikandi" width="100" height="40"></a>
+          <a href="home.php" class="brand"><img src="img/logo-srikandi.png" alt="srikandi" width="100" height="40"></a>
           <div class="nav-collapse">              
             <ul class="nav actions">
                 <li><a href="home.php">Beranda</a></li>
