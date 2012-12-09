@@ -20,7 +20,7 @@
 		</div>
 	  
 		<div class="span9">
-		  <form action="" method="post" name="tambahjadwal">
+		  <form action="../function/fungsiaddjadwal.php" method="post" name="tambahjadwal">
 			<h3><strong>Tambah Jadwal</strong></h3>
 			<table width="507">
 			<tr>
@@ -34,7 +34,7 @@
 			</tr>
 			<tr>
 			  <td><label>Lokasi</label>&nbsp;</td>
-			  <td><input type="text" name="tempatjadwal" id="usernamemember" />&nbsp;</td>
+			  <td><input type="text" name="tempatjadwal" id="tempatjadwal" />&nbsp;</td>
 			</tr>
 			<tr>
 			  <td><label>Deskripsi Acara</label>&nbsp;</td>
@@ -43,10 +43,10 @@
 			</tr>
 			<tr>
 			  <td><label>Foto</label>&nbsp;</td>
-			  <td><input class="input-large" type="file" name="fotomember" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
+			  <td><input class="input-large" type="file" name="gambarkegiatan" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
 			</tr>
 		    </table><br>
-			<input type="submit" class="btn btn-primary" name="button" value="Daftar">
+			<input type="submit" class="btn btn-primary" name="button" value="Tambah Jadwal">
 			<input class="btn" type="reset" value="Reset">
 		  </form>
 		</div>
