@@ -41,11 +41,15 @@
 			</tr>
 			<tr>
 			  <td><label>Email</label>&nbsp;</td>
-			  <td><input type="text" name="emailmember" id="emailmember" />&nbsp;</td>
+			  <td><input type="email" name="emailmember" id="emailmember" />&nbsp;</td>
 			</tr>
 			<tr>
 			  <td><label>Kategori Member</label>&nbsp;</td>
-			  <td><input type="text" name="kategorimember" id="kategorimember" />&nbsp;</td>
+			  <td><label class="control-label" for="kategorimember"></label>
+				<select>
+				  <option>Individu</option>
+				  <option>Kelompok</option>
+				</select><br>&nbsp;</td>
 			</tr>
 			<tr>
 			  <td><label>Biografi</label>&nbsp;</td>
@@ -54,13 +58,14 @@
 			</tr>
 			<tr>
 			  <td><label>Foto</label>&nbsp;</td>
-			  <td><input type="text" name="fotomember" id="fotomember" />&nbsp;</td>
+			  <td><input class="input-large" type="file" name="fotomember" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
 			</tr>
 		    </table>
 			<p>
 			<input type="checkbox" name="setuju" id="setuju" />
 			Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
 			<input type="submit" class="btn btn-primary" name="button" value="Daftar">
+			<input class="btn" type="reset" value="Reset">
 		  </form>
 		</div>
 	  </div>
