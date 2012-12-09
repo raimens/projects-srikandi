@@ -20,10 +20,17 @@
 		</div>
 	  
 		<div class="span9">
+		  <div class="control-group">
+			<label class="control-label" for="textarea2">Textarea WYSIWYG</label>
+			<div class="controls">
+			   <textarea class="cleditor" id="textarea2" rows="3"></textarea>
+			</div>
+		  </div>
 		</div>
 	  </div>
-	</div>	
+	</div>
+	<script src="../js/jquery.autogrow-textarea.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

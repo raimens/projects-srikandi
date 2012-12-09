@@ -19,7 +19,7 @@
 	  <?php
 	  session_start();
 	  if (isset($_SESSION['usernamemember'])) {
-		header('Location: page/member/index.php');
+		header('Location: member/index.php');
 	  }
 	  if(isset ($_SESSION['salah'])){?>
 	  <i>username dan password anda salah. mohon masukkan ulang username dan password anda</i>
