@@ -2,19 +2,31 @@
 <html lang="en">
   <head>
     <title>Sistem Informasi Kesenian Daerah Indonesia</title>
-    <link rel="shortcut icon" href="img/icon.png"/>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="../../img/icon.png"/>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
     <?php
-	include ("header.php");
+	include ("headermember.php");
+	include "../../function/connect.php";
+	session_start();
+	
+	if (!isset($_SESSION['usernamemember'])){
+		header('Location: ../../home.php');
+	}
+	$sql = "SELECT usernamemember FROM member WHERE (usernamemember = " .$_SESSION['usernamemember']. ")";
+	$login = mysql_query($sql) or die (mysql_error());
+	$usernamemember = "";
+	if ($row=mysql_fetch_row($login)){
+		$usernamemember = $row[0];
+	}
 	?>
 	
 	<div class="container-fluid">
 	  <div class="row-fluid">
 		<div class="span3">
 		<?php
-		include ("search.php");
+		include ("../../search.php");
 		?>
 		</div>
 	  
@@ -32,6 +44,6 @@
 	  </div>
 	</div>	
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
   </body>
 </html>

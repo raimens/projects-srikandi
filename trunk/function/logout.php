@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-unset($_SESSION['ID']);
+unset($_SESSION['usernamemember']);
 
 // session_destroy();
-header('Location: home.php');
+header('Location: ../home.php');
