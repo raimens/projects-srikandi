@@ -19,7 +19,7 @@
 		</div>
 	  
 		<div class="span9">
-		  <form action="../projects-srikandi/function/fungsiaddanggota.php" method="post" name="tambah anggota">
+		  <form action="function/fungsiaddanggota.php" method="post" name="tambahanggota">
 			<h3><strong>Formulir Tambah Anggota</strong></h3>
 			<table width="507">
 			<tr>
