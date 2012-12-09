@@ -8,8 +8,8 @@
             <ul class="nav actions">
                 <li><a href="index.php">Beranda</a></li>
                 <li><a href="seniman.php">Seniman</a></li>
-				<li><a href="berita.php">Berita</a></li>
-                <li><a href="jadwal.php">Jadwal</a></li>
+				<li><a href="">Berita</a></li>
+                <li><a href="jadwalmember.php">Jadwal</a></li>
 				<li><a href="profilsaya.php">Profil Saya</a></li>
 				<li><a href="../function/logout.php">Logout</a></li>
             </ul>

@@ -20,6 +20,7 @@
 		</div>
 		
 		<div class="span9">
+		<a align="right" class="btn" href="tambah-jadwal.php">+ Tambah Jadwal</a><br><br>
 		</div>
 	  </div>
 	</div>	
