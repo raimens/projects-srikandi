@@ -12,7 +12,7 @@ $login = mysql_query($sql);
 if ($row=mysql_fetch_row($login)) {
 	$_SESSION['usernamemember'] = $row[0];
 	//echo "sukses";
-	header('Location: ../page/member/index.php');
+	header('Location: ../member/index.php');
 	} else {
 		$_SESSION['salah']=TRUE;
 		header('Location: ../home.php');

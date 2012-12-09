@@ -2,17 +2,17 @@
 <html lang="en">
   <head>
     <title>Sistem Informasi Kesenian Daerah Indonesia</title>
-    <link rel="shortcut icon" href="../../img/icon.png"/>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="../img/icon.png"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
     <?php
 	include ("headermember.php");
-	include "../../function/connect.php";
+	include "../function/connect.php";
 	session_start();
 	
 	if (!isset($_SESSION['usernamemember'])){
-		header('Location: ../../home.php');
+		header('Location: ../home.php');
 	}
 	$sql = "SELECT usernamemember FROM member";
 	$login = mysql_query($sql) or die (mysql_error());
@@ -26,7 +26,7 @@
 	  <div class="row-fluid">
 		<div class="span3">
 		<?php
-		include ("../../search.php");
+		include ("../search.php");
 		?>
 		</div>
 	  
