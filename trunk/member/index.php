@@ -14,7 +14,7 @@
 	if (!isset($_SESSION['usernamemember'])){
 		header('Location: ../../home.php');
 	}
-	$sql = "SELECT usernamemember FROM member WHERE (usernamemember = " .$_SESSION['usernamemember']. ")";
+	$sql = "SELECT usernamemember FROM member";
 	$login = mysql_query($sql) or die (mysql_error());
 	$usernamemember = "";
 	if ($row=mysql_fetch_row($login)){
@@ -31,15 +31,6 @@
 		</div>
 	  
 		<div class="span9">
-		  <div id="slideshow" class="carousel slide">
-			<div class="carousel-inner">
-			  <div class="active item">halooo</div>
-			  <div class="item">halo</div>
-			  <div class="item">mumu</div>
-			</div>
-		  <a class="carousel-control left" href="" data-slide="prev">&lsaquo;</a>
-		  <a class="carousel-control right" href="" data-slide="next">&rsaquo;</a>
-		  </div>
 		</div>
 	  </div>
 	</div>	

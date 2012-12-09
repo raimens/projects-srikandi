@@ -35,8 +35,8 @@
 		  <input type="checkbox">Ingatkan saya
 		  </label><br>
 		  <button type="submit" class="btn btn-primary">Masuk</button>
-		  <button class="btn" href="signup.php">Daftar</button><br><br>
-		  <a class="btn btn-link" href="">Lupa password?</a>
+		  <a class="btn" href="signup.php">Daftar</a><br><br>
+		  <a href="">Lupa password?</a>
 		</div>
 	  </div>
 	</form>
