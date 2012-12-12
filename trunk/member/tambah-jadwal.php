@@ -20,7 +20,7 @@
 		</div>
 	  
 		<div class="span9">
-		  <form action="../function/fungsiaddjadwal.php" method="post" name="tambahjadwal">
+		  <form enctype="multipart/form-data" action="../function/fungsiaddjadwal.php" method="post" name="tambahjadwal">
 			<h3><strong>Tambah Jadwal</strong></h3>
 			<table width="507">
 			<tr>
@@ -43,7 +43,7 @@
 			</tr>
 			<tr>
 			  <td><label>Foto</label>&nbsp;</td>
-			  <td><input class="input-large" type="file" name="gambarkegiatan" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
+			  <td><input class="input-large" type="file" name="nama_file" accept="image/png,image/jpeg,image/jpg,image/gif"><small><span class="help-block">Max 200 kb. jpg / jpeg / png / gif</span></small>&nbsp;</td>
 			</tr>
 		    </table><br>
 			<input type="submit" class="btn btn-primary" name="button" value="Tambah Jadwal">
