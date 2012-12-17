@@ -43,7 +43,7 @@
 			</tr>
 			<tr>
 			  <td><label>Foto</label>&nbsp;</td>
-			  <td><input class="input-large" type="file" name="nama_file" accept="image/png,image/jpeg,image/jpg,image/gif"><small><span class="help-block">Max 200 kb. jpg / jpeg / png / gif</span></small>&nbsp;</td>
+			  <td><input class="input-large" type="file" name="nama_file" accept="image/png,image/jpeg,image/jpg,image/gif"><small><span class="help-block">Max 10MB. jpg / jpeg / png / gif</span></small>&nbsp;</td>
 			</tr>
 		    </table><br>
 			<input type="submit" class="btn btn-primary" name="button" value="Tambah Jadwal">
