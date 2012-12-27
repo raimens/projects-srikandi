@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<BODY BACKGROUND="bar2.jpg">
+<BODY BACKGROUND="img/bar2.jpg">
   <head>
     <title>Sistem Informasi Kesenian Daerah Indonesia</title>
     <link rel="shortcut icon" href="img/icon.png"/>
