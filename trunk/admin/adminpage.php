@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
 <title>Sistem Informasi Kesenian Daerah Indonesia</title>
-<link rel="shortcut icon" href="img/icon.png"/>
+<link rel="shortcut icon" href="../img/icon.png"/>
 <link id="bs-css" href="../css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/charisma-app.css" rel="stylesheet">
-<link href="css/bootstrap-responsive.css" rel="stylesheet">
-<link href="css/charisma-app.css" rel="stylesheet">
-<link href="css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
-<link href='css/fullcalendar.css' rel='stylesheet'>
-<link href='css/fullcalendar.print.css' rel='stylesheet'  media='print'>
-<link href='css/chosen.css' rel='stylesheet'>
-<link href='css/uniform.default.css' rel='stylesheet'>
-<link href='css/colorbox.css' rel='stylesheet'>
-<link href='css/jquery.cleditor.css' rel='stylesheet'>
-<link href='css/jquery.noty.css' rel='stylesheet'>
-<link href='css/noty_theme_default.css' rel='stylesheet'>
-<link href='css/elfinder.min.css' rel='stylesheet'>
-<link href='css/elfinder.theme.css' rel='stylesheet'>
-<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
-<link href='css/opa-icons.css' rel='stylesheet'>
-<link href='css/uploadify.css' rel='stylesheet'>
-<link rel="shortcut icon" href="img/favicon.ico">
+<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+<link href="../css/charisma-app.css" rel="stylesheet">
+<link href="../css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+<link href='../css/fullcalendar.css' rel='stylesheet'>
+<link href='../css/fullcalendar.print.css' rel='stylesheet'  media='print'>
+<link href='../css/chosen.css' rel='stylesheet'>
+<link href='../css/uniform.default.css' rel='stylesheet'>
+<link href='../css/colorbox.css' rel='stylesheet'>
+<link href='../css/jquery.cleditor.css' rel='stylesheet'>
+<link href='../css/jquery.noty.css' rel='stylesheet'>
+<link href='../css/noty_theme_default.css' rel='stylesheet'>
+<link href='../css/elfinder.min.css' rel='stylesheet'>
+<link href='../css/elfinder.theme.css' rel='stylesheet'>
+<link href='../css/jquery.iphone.toggle.css' rel='stylesheet'>
+<link href='../css/opa-icons.css' rel='stylesheet'>
+<link href='../css/uploadify.css' rel='stylesheet'>
 <style type="text/css">
 	body {
 	  padding-bottom: 40px;
