@@ -11,9 +11,10 @@ if($_POST["button"] == "Simpan")
     $judul = $_POST['judulberita'];
 	$isi = $_POST['isiberita'];
 	$usernamemember	= $_SESSION['usernamemember'];
+	$jenisberita = $_POST['jenisberita'];
 	
-	$sql = "INSERT INTO berita(USERNAMEMEMBER, JUDULBERITA, ISIBERITA, TANGGALBERITA) 
-	VALUES ('$usernamemember','$judul','$isi','$datetime')"; 
+	$sql = "INSERT INTO berita(USERNAMEMEMBER, JUDULBERITA, ISIBERITA, TANGGALBERITA, JENISBERITA) 
+	VALUES ('$usernamemember','$judul','$isi','$datetime','$jenisberita')"; 
     $result = mysql_query($sql);
 }
 ?>
