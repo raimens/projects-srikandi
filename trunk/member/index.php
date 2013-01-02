@@ -25,6 +25,12 @@
 		<?php
 		include ("welcome.php");
 		?>
+		
+		<div class="sidewell" style="margin-top:0px;">
+		 <?php
+		  include ("../search.php");
+		  ?>
+		</div>
       </div>
 	  
 	  <div class="span9">

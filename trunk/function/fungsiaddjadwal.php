@@ -1,7 +1,6 @@
 <?php  
 include("connect.php");
 include("loginfirst.php");
-include("../member/statusuploadfoto.php");
 
 if($_POST["button"] == "Tambah Jadwal")  
 {
