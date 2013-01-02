@@ -26,9 +26,6 @@
 		  <ul class="nav">
 		  <li class="active"><a href="#">Sistem Informasi Kesenian Daerah Indonesia</a></li>
 		  </ul>
-		  <form class="navbar-search pull-right">
-			<input class="search-query span3" placeholder="Search..." type="text">
-		  </form>
 		  </div>
 		</div>
 	  </div>
@@ -63,13 +60,6 @@
 	<div class="span2"></div>
 	</div>
 	</div>
-	
-    <div class="row">
-      <div class="span12">
-		<p style="padding:20px;color:black;"><b>Sistem Informasi Kesenian Daerah Indonesia<span class="pull-right">Kelompok 2</span></b></p>
-      </div>
-    </div>
-
 </div>
 
 <script src="../css/jquery.js"></script>

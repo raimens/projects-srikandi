@@ -26,9 +26,6 @@
 		  <ul class="nav">
 		  <li class="active"><a href="#">Sistem Informasi Kesenian Daerah Indonesia</a></li>
 		  </ul>
-		  <form class="navbar-search pull-right">
-			<input class="search-query span3" placeholder="Search..." type="text">
-		  </form>
 		  </div>
 		</div>
 	  </div>
@@ -51,17 +48,18 @@
 		<div class="row-fluid">
 		<div class="well span5 center login-box">
 		<form method="POST" action="#">
+		  <center><h3>ADMIN PANEL</h3></center><br>
 		  <div class="control-group">
-			<label class="control-label" for="usernamemember"><center>Username</center></label>
+			<label class="control-label" for="usernamemember">Username</label>
 			<div class="controls">
-			<input type="text" name="usernamemember" placeholder="username">
+			<input type="text" name="usernamemember">
 			</div>
 		  </div>
 		  
 		  <div class="control-group">
 			<label class="control-label" for="passwordmember">Password</label>
 			<div class="controls">
-			<input type="password" name="passwordmember" placeholder="password">
+			<input type="password" name="passwordmember">
 			</div>
 		  </div>
 		  

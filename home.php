@@ -21,8 +21,14 @@
     <div class="row">
 	  <div class="span3">
 		<div class="sidewell" style="margin-top:0px;">
-		 <?
+		 <?php
 		  include ("login.php");
+		  ?>
+		</div>
+		
+		<div class="sidewell" style="margin-top:0px;">
+		 <?php
+		  include ("search.php");
 		  ?>
 		</div>
 		
