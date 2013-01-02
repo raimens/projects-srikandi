@@ -17,7 +17,7 @@ if($_POST["button"] == "Tambah Galeri")
 	//kode untuk mengganti spasi menjadi garis bawah pada nama file
  
  
-	$nama_baru = preg_replace("/\s+/", "_", $nama_baru = preg_replace("/\s+/", "_", $usernamemember . "_" . $nama_file););
+	$nama_baru = preg_replace("/\s+/", "_", $usernamemember . "_" . $nama_file);
 	$direktori = "../upload/$nama_baru";
  
 	$MAX_FILE_SIZE = 10000000; //10Mb
