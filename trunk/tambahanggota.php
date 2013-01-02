@@ -26,7 +26,7 @@
 	  
 	  <div class="span9">
 		<form action="function/fungsiaddanggota.php" method="post" name="tambahanggota">
-		  <h3><strong>Formulir Tambah Anggota</strong></h3>
+		  <h3><strong>Formulir Tambah Anggota</strong></h3><br>
 		  <table width="507">
 		  <tr>
 		  <td width="150"><label>Nama</label>&nbsp;</td>
@@ -51,11 +51,11 @@
 		  </tr>
 		  <tr>
 		  <td><label>Kategori Member</label>&nbsp;</td>
-		  <td><label class="control-label" for="kategorimember"></label>
-			<select name="kategorimember" id="kategorimember" />
-			<option value="Individu">Individu</option>
-			<option value="Kelompok">Kelompok</option>
-			</select><br>&nbsp;</td>
+		  <td><input type="checkbox" name="Seni Tari" id="Seni Tari">  Seni Tari<br>
+            <input type="checkbox" name="Seni Musik" id="Seni Musik">  Seni Musik<br>
+            <input type="checkbox" name="Seni Rupa" id="Seni Rupa">  Seni Rupa<br>
+            <input type="checkbox" name="Drama" id="Drama">  Drama<br>
+          </td>
 		  </tr>
 		  <tr>
 		  <td><label>Biografi</label>&nbsp;</td>
