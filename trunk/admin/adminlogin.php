@@ -45,7 +45,6 @@
 	  <div class="row-fluid">
 		<div class="row-fluid">
 		<div class="span12 center login-header">
-		<h2>Admin Panel SRIKANDI</h2><br>
 		</div>
 		</div>
 			
@@ -82,13 +81,6 @@
 	<div class="span2"></div>
 	</div>
 	</div>
-	
-    <div class="row">
-      <div class="span12">
-		<p style="padding:20px;color:black;"><b>Sistem Informasi Kesenian Daerah Indonesia<span class="pull-right">Kelompok 2</span></b></p>
-      </div>
-    </div>
-
 </div>
 
 <script src="../css/jquery.js"></script>
