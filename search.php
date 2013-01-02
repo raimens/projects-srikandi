@@ -2,7 +2,7 @@
   <body>
 	<form>
 	<fieldset>
-	  <legend>Cari Kesenian</legend>
+	  <center><legend>Cari Kesenian</legend></center>
 		<input type="text" placeholder="Type something…">
 		<label class="control-label" for="search">Apa yang kamu cari??</label>
 		<select>
