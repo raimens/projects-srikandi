@@ -47,7 +47,7 @@
 			
 		<div class="row-fluid">
 		<div class="well span5 center login-box">
-		<form method="POST" action="#">
+		<form method="POST" action="../function/fungsi-login-admin.php">
 		  <center><h3>ADMIN PANEL</h3></center><br>
 		  <div class="control-group">
 			<label class="control-label" for="usernamemember">Username</label>
