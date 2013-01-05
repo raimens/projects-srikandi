@@ -90,10 +90,10 @@
 		  </tr>
 		  <tr>
 		  <td><label>Kategori Member</label>&nbsp;</td>
-		  <td><input type="checkbox" name="Seni Tari" id="Seni Tari">  Seni Tari<br>
-            <input type="checkbox" name="Seni Musik" id="Seni Musik">  Seni Musik<br>
-            <input type="checkbox" name="Seni Rupa" id="Seni Rupa">  Seni Rupa<br>
-            <input type="checkbox" name="Drama" id="Drama">  Drama<br>
+		  <td><input type="checkbox" name = "kategorimember[]" value="Seni Tari">  Seni Tari<br>
+            <input type="checkbox" name = "kategorimember[]" value="Seni Musik">  Seni Musik<br>
+            <input type="checkbox" name = "kategorimember[]" value="Seni Rupa">  Seni Rupa<br>
+            <input type="checkbox" name = "kategorimember[]" value="Drama">  Drama<br>
           </td>
 		  </tr>
 		  <tr>

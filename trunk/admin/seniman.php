@@ -30,7 +30,7 @@
 	do{   
         list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
         echo "<table width='746' border=0>";
-		echo "<center>";
+		
 		echo "<tr>";
 		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
         echo "<td width='150'>Nama</td>";
@@ -66,7 +66,8 @@
 		echo "<td></td>";
 		echo "<td>Biografi</td>";
 		echo "<td>: $biografimember</td>";
-		echo "</tr>"; 
+		echo "</tr>";
+		echo "<br>";
     }while($row=mysql_fetch_row($query)); 
 	?>
         	</div>
