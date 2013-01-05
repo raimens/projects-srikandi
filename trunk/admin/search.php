@@ -17,6 +17,7 @@
     document.getElementById('div2').style.display='none';
     }
 </script>
+
   <body onload ="hidefield2();hidefield();">
 	<form method="post">
 	<fieldset>
