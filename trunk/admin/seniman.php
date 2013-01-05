@@ -23,22 +23,41 @@
 	  ?>
 
 	  <div id="seniman" class="span9">
-        <h3>Manajemen Koperasi</h3>
+	  <h3>Daftar Seniman Indonesia</h3>
 	<?php
     include ("../function/fungsiviewseniman.php");
 	do{   
-        list($namamember,$alamatmember,$usernamemember,$passwordmember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
-        echo "<tr>";
-        echo "<td>$fotomember</td>";		
-        echo "<td>$namamember</td>";
+        list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
+        echo "<table border=0>";
+		echo "<center>";
+		echo "<tr>";		
+        echo "<td>Nama</td>";
+		echo "<td>$namamember</td>";
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td>Alamat</td>";
 		echo "<td>$alamatmember</td>";
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td>Asal Member</td>";
 		echo "<td>$daerahmember</td>";
-        echo "<td>$usernamemember</td>";  
-        echo "<td>$passwordmember</td>";
+        echo "</tr>";
+		echo "<td>Username</td>";
+		echo "<td>$usernamemember</td>";		
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td>Email</td>";
 		echo "<td>$emailmember</td>";
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td>Kategori</td>";
 		echo "<td>$kategorimember</td>";
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td>Biografi</td>";
 		echo "<td>$biografimember</td>";
-        echo "</tr>";  
+		echo "</tr>";  
+		echo "</center>";
     }while($row=mysql_fetch_row($query)); 
 	?>
         	</div>
