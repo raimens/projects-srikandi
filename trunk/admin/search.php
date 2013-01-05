@@ -6,6 +6,7 @@
 		<input type="text" name="input" placeholder="Masukkan keyword…">
 		<label class="control-label" for="search">Apa yang kamu cari??</label>
 		<select type="text" name="menu">
+		  <option value="none">Pilih yang kamu cari</option>
 		  <option value="Seniman">Seniman</option>
 		  <option value="Jadwal">Jadwal</option>
 		  <option value="Berita">Berita</option>
@@ -53,8 +54,7 @@
 		  <option value="Maluku Utara">Maluku Utara</option>
 		  <option value="Papua Barat">Papua Barat</option>
 		  <option value="Papua">Papua</option>
-		</select><br>
-		
-		<button type="submit" class="btn">Search</button>
+		</select><br><br>
+		<button type="submit" name="cari" class="btn">Search</button>
 	  </fieldset>
 	</form>
