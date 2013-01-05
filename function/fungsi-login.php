@@ -21,3 +21,4 @@ if ($row=mysql_fetch_row($login)) {
 	//echo "gagal";
 	header('Location: ../home.php');
 	}
+?>
