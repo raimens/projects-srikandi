@@ -13,6 +13,7 @@
 <body class="mainblock">
   <?php
   include ("adminheader.php");
+  include ("../function/loginfirstadmin.php")
   ?>
   
   <div class="container">
@@ -23,28 +24,23 @@
 
 	  <div id="seniman" class="span9">
         <h3>Manajemen Koperasi</h3>
-				<?php
-                include("../function/connect.php");
-                $sql = "SELECT * FROM member";
-                $records = mysql_query($sql); 
-                while($rows = mysql_fetch_array($records)){
-				echo "<div class='row-fluid'>";	
-                echo "<div class='span4'>
-                        <img src='../img/default.jpg'' alt='' width='260' height='180' /> 
-                      </div>";
-                echo "<div class='span8'>
-                        Nama : " . $rows['namamember'] . "<br />
-                        Alamat : " . $rows['alamatmember'] . "<br />
-                        Email : " . $rows['emailmember'] . "<br />
-                        Kategori : " . $rows['kategorimember'] . "<br />
-                        Biografi : " . $rows['biografimember'] . "<br />
-						Asal daerah : " . $rows['daerahmember'] . "<br />
-						Username : " . $rows['usernamemember'] . "<br />
-                        <p align='right'><a class='btn btn-danger' href='..'>Hapus Member</a></p>
-                      </div>";
-				echo  "</div>";	  
-                }
-                ?>
+	<?php
+    include ("../function/fungsiviewseniman.php");
+	do{   
+        list($namamember,$alamatmember,$usernamemember,$passwordmember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
+        echo "<tr>";
+        echo "<td>$fotomember</td>";		
+        echo "<td>$namamember</td>";
+		echo "<td>$alamatmember</td>";
+		echo "<td>$daerahmember</td>";
+        echo "<td>$usernamemember</td>";  
+        echo "<td>$passwordmember</td>";
+		echo "<td>$emailmember</td>";
+		echo "<td>$kategorimember</td>";
+		echo "<td>$biografimember</td>";
+        echo "</tr>";  
+    }while($row=mysql_fetch_row($query)); 
+	?>
         	</div>
 	  </div>
     </div>
