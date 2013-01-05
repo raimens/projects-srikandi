@@ -31,7 +31,6 @@
 	do{   
         list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
         echo "<table width='746' border=0>";
-		
 		echo "<tr>";
 		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
         echo "<td width='150'>Nama</td>";
