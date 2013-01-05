@@ -5,6 +5,7 @@
 	
   <div class="sidewell" style="margin-top:0px;">
 	<ul class="nav nav-tabs nav-stacked" style="color:white; background:white;">
+	<li><a href="adminpage.php">Beranda</a></li>
 	<li><a href="seniman.php">Seniman</a></li>
 	<li><a href="berita.php">Berita</a></li>
 	<li><a href="jadwal.php">Jadwal</a></li>
