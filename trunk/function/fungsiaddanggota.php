@@ -12,10 +12,11 @@ if($_POST["button"] == "Daftar")
 	$kategorimember = $_POST['kategorimember'];
 	$biografi = $_POST['biografimember'];
 	$foto = $_POST['fotomember'];
+	$daerah = $_POST['daerah'];
 	$kategorimember=implode(",",$_POST['kategorimember']);
-	
-	$sql = "INSERT INTO member(NAMAMEMBER, ALAMATMEMBER, USERNAMEMEMBER, TIPE, PASSWORDMEMBER, EMAILMEMBER, KATEGORIMEMBER, BIOGRAFIMEMBER, FOTOMEMBER) 
-	VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', '$foto')"; 
+
+	$sql = "INSERT INTO member(NAMAMEMBER, ALAMATMEMBER, USERNAMEMEMBER, TIPE, PASSWORDMEMBER, EMAILMEMBER, KATEGORIMEMBER, BIOGRAFIMEMBER, FOTOMEMBER, DAERAHMEMBER) 
+	VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', '$foto', '$daerah')"; 
     $result = mysql_query($sql);
 
 }
