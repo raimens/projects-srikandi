@@ -12,6 +12,7 @@
 
 <body class="mainblock">
   <?php
+  include ("../function/loginfirstadmin.php");
   include ("adminheader.php");
   ?>
   
