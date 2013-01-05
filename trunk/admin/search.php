@@ -19,13 +19,13 @@
 </script>
 
   <body onload ="hidefield2();hidefield();">
-	<form method="post">
+	<form method="post" action="../function/fungsisearchadmin.php">
 	<fieldset>
 	  <center><legend>Cari Kesenian</legend></center>
 		<input type="text" name="input" placeholder="Masukkan keyword…">
 		<label class="control-label" for="search">Apa yang kamu cari??</label>
 		<select type="text" name="menu" onchange="showfield(this.options[this.selectedIndex].value)">
-		  <option value="none">Pilih yang kamu cari</option>
+		  <option value="">Pilih yang kamu cari</option>
 		  <option value="Seniman">Seniman</option>
 		  <option value="Jadwal">Jadwal</option>
 		  <option value="Berita">Berita</option>
@@ -33,6 +33,7 @@
 		<div id="div1">
 		<label class="control-label" for="search">Cari menurut.....</label>
 		<select type="text" name="jenis">
+	      <option value="">Cari menurut</option>
 		  <option value="Seni Tari">Seni Tari</option>
 		  <option value="Seni Musik">Seni Musik</option>
 		  <option value="Seni Rupa">Seni Rupa</option>
@@ -42,6 +43,7 @@
 		<div id="div2">
 		<label class="control-label" for="search">Cari menurut daerah</label>
 		<select type="text" name="daerah">
+		  <option value="">Cari daerah</option>
 		  <option value="Aceh">Aceh</option>
 		  <option value="Sumatera Utara">Sumatera Utara</option>
 		  <option value="Sumatera Barat">Sumatera Barat</option>
