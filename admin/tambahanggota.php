@@ -39,7 +39,7 @@
 		  <td><label>Provinsi</label>&nbsp;</td>
 		  <td>
 		  <label class="control-label" for="daerahmember"></label>
-		  <select>
+		  <select type="text" name="daerah">
 		  <option value="Aceh">Aceh</option>
 		  <option value="Sumatera Utara">Sumatera Utara</option>
 		  <option value="Sumatera Barat">Sumatera Barat</option>
