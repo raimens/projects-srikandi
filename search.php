@@ -1,13 +1,31 @@
 <html>
-<script src = "js/searchjs.js">
+<script type="text/javascript">
+  function showfield(name){
+    if(name=='Berita')
+	document.getElementById('div1').style.display="block";
+    else document.getElementById('div1').style.display="none";
+	
+	if(name=='Seniman'){
+	document.getElementById('div1').style.display="block";
+	document.getElementById('div2').style.display="block";
+    }else {document.getElementById('div2').style.display="none";
+    }}
+    function hidefield() {
+    document.getElementById('div1').style.display='none';
+    }
+    function hidefield2() {
+    document.getElementById('div2').style.display='none';
+    }
 </script>
-  <body>
+
+  <body onload ="hidefield2();hidefield();">
 	<form method="post">
 	<fieldset>
 	  <center><legend>Cari Kesenian</legend></center>
 		<input type="text" name="input" placeholder="Masukkan keyword…">
 		<label class="control-label" for="search">Apa yang kamu cari??</label>
-		<select type="text" name="menu">
+		<select type="text" name="menu" onchange="showfield(this.options[this.selectedIndex].value)">
+		  <option value="none">Pilih yang kamu cari</option>
 		  <option value="Seniman">Seniman</option>
 		  <option value="Jadwal">Jadwal</option>
 		  <option value="Berita">Berita</option>
@@ -20,6 +38,7 @@
 		  <option value="Seni Rupa">Seni Rupa</option>
 		  <option value="Drama">Drama</option>
 		</select><br>
+		</div>
 		<div id="div2">
 		<label class="control-label" for="search">Cari menurut daerah</label>
 		<select type="text" name="daerah">
@@ -58,7 +77,8 @@
 		  <option value="Papua Barat">Papua Barat</option>
 		  <option value="Papua">Papua</option>
 		</select><br>
-		
-		<button type="submit" class="btn">Search</button>
+		</div>
+		<br>
+		<button type="submit" name="cari" class="btn">Search</button>
 	  </fieldset>
 	</form>
