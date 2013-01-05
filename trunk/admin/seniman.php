@@ -24,6 +24,7 @@
 
 	  <div id="seniman" class="span9">
 	  <h3>Daftar Seniman Indonesia</h3><br>
+	  <a class="btn" href="tambahanggota.php">Tambah Seniman</a><br><br>
 	<?php
     include ("../function/fungsiviewseniman.php");
 	do{   
@@ -33,38 +34,38 @@
 		echo "<tr>";
 		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
         echo "<td width='150'>Nama</td>";
-		echo "<td width='404'>$namamember</td>";
-		echo "<td width='192'><a class='btn btn-danger' href='..'>Ubah Riwayat</a></td>";
+		echo "<td width='404'>: $namamember</td>";
+		echo "<td width='192'><a class='btn btn-danger' href=''>Ubah Riwayat</a></td>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";
 		echo "<td>Alamat</td>";
-		echo "<td>$alamatmember</td>";
+		echo "<td>: $alamatmember</td>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";
 		echo "<td>Asal Member</td>";
-		echo "<td>$daerahmember</td>";
+		echo "<td>: $daerahmember</td>";
         echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";
 		echo "<td>Username</td>";
-		echo "<td>$usernamemember</td>";		
+		echo "<td>: $usernamemember</td>";		
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";
 		echo "<td>Email</td>";
-		echo "<td>$emailmember</td>";
+		echo "<td>: $emailmember</td>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";
 		echo "<td>Kategori</td>";
-		echo "<td>$kategorimember</td>";
+		echo "<td>: $kategorimember</td>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";
 		echo "<td>Biografi</td>";
-		echo "<td>$biografimember</td>";
+		echo "<td>: $biografimember</td>";
 		echo "</tr>"; 
     }while($row=mysql_fetch_row($query)); 
 	?>
