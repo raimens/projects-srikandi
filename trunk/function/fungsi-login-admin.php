@@ -19,6 +19,6 @@ if ($row=mysql_fetch_row($login)) {
 	 }
 } else {
 	//echo "gagal";
-	header('Location: ../adminlogin.php');
+	header('Location: ../admin/adminlogin.php');
 	}
 ?>
