@@ -72,14 +72,6 @@
         	</div>
 	  </div>
     </div>
-	
-	<div class="container" style="padding:30px;">
-	  <div class="row">
-		<div class="span10"></div>
-		<div class="span2"></div>
-	  </div>
-	</div>
-  </div>
 
 <?php
 include ("../js/script.php");
