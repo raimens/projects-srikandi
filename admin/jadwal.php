@@ -11,70 +11,31 @@
 </head>
 
 <body class="mainblock">
+  <?php
+  include ("adminheader.php");
+  ?>
+  
   <div class="container">
-	<div class="navbar" style="padding-top:20px;">
-	  <div class="navbar-inner" style="padding-top:10px; padding-bottom:5px;">
-		<div class="container">
-		  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </a>
-		  
-		  <a class="brand" href="#">SRIKANDI</a>
-		  <div class="nav-collapse">
-		  <ul class="nav">
-		  <li class="active"><a href="#">Sistem Informasi Kesenian Daerah Indonesia</a></li>
-		  </ul>
-		  </div>
-		</div>
+	<div class="row">
+	  <?php
+	  include ("sidebar.php");
+	  ?>
+
+	  <div class="span9">
+	  <h3>ini select all tabel jadwal</h3>
+	  </div>
+    </div>
+	
+	<div class="container" style="padding:30px;">
+	  <div class="row">
+		<div class="span10"></div>
+		<div class="span2"></div>
 	  </div>
 	</div>
   </div>
-  
-  <div class="container">
-    <div class="row">
-	  <div class="span3">
-	  <div class="wellmess">
-		<center><h4>Selamat Datang <?php echo $usernamemember; ?></h4></center><br>
-	  </div>
-	  <div class="sidewell" style="margin-top:0px;">
-		<ul class="nav nav-tabs nav-stacked" style="color:white; background:white;">
-		  <li><a href="seniman.php">Seniman</a></li>
-		  <li><a href="berita.php">Berita</a></li>
-		  <li><a href="jadwal.php">Jadwal</a></li>
-		  <li><a href="../function/logout.php">Logout</a></li>
-		  <li><a href="../home.php">Back to Front End</a></li>
-		</ul>
-	  </div>	
-      </div>
-	  
-	  <div class="span9">
-	  
-	  </div>
-	</div>
-    
-	<div class="container" style="padding:30px;">
-	<div class="row">
-	<div class="span10"></div>
-	<div class="span2"></div>
-	</div>
-	</div>
-</div>
 
-<script src="../css/jquery.js"></script>
-<script src="../css/bootstrap.js"></script>
-<script src="../css/bootstrap-transition.htm"></script>
-<script src="../css/bootstrap-alert.js"></script>
-<script src="../css/bootstrap-modal.js"></script>
-<script src="../css/bootstrap-dropdown.js"></script>
-<script src="../css/bootstrap-scrollspy.js"></script>
-<script src="../css/bootstrap-tab.js"></script>
-<script src="../css/bootstrap-tooltip.js"></script>
-<script src="../css/bootstrap-popover.js"></script>
-<script src="../css/bootstrap-button.js"></script>
-<script src="../css/bootstrap-collapse.js"></script>
-<script src="../css/bootstrap-carousel.js"></script>
-<script src="../css/bootstrap-typeahead.js"></script>
+<?php
+include ("../js/script.php");
+?>
 </body>
 </html>
