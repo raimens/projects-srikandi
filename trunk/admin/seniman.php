@@ -24,7 +24,8 @@
 
 	  <div id="seniman" class="span9">
 	  <h3>Daftar Seniman Indonesia</h3><br>
-	  <a class="btn" href="tambahanggota.php">Tambah Seniman</a><br><br>
+	  <a class="btn" href="tambahanggota.php">Tambah Seniman</a>
+	  <a class="btn" href="">Hapus Seniman</a><br><br>
 	<?php
     include ("../function/fungsiviewseniman.php");
 	do{   
