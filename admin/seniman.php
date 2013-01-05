@@ -28,11 +28,12 @@
     include ("../function/fungsiviewseniman.php");
 	do{   
         list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
-        echo "<table border=0>";
+        echo "<table width=1000 border=0>";
 		echo "<center>";
 		echo "<tr>";		
         echo "<td>Nama</td>";
 		echo "<td>$namamember</td>";
+		echo "<td><a class='btn btn-danger' href='..'>Ubah Riwayat</a></td>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td>Alamat</td>";
@@ -56,8 +57,7 @@
 		echo "<tr>";
 		echo "<td>Biografi</td>";
 		echo "<td>$biografimember</td>";
-		echo "</tr>";  
-		echo "</center>";
+		echo "</tr>"; 
     }while($row=mysql_fetch_row($query)); 
 	?>
         	</div>
