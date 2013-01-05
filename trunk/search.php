@@ -1,4 +1,6 @@
 <html>
+<script src = "js/searchjs.js">
+</script>
   <body>
 	<form method="post">
 	<fieldset>
@@ -10,6 +12,7 @@
 		  <option value="Jadwal">Jadwal</option>
 		  <option value="Berita">Berita</option>
 		</select>
+		<div id="div1">
 		<label class="control-label" for="search">Cari menurut.....</label>
 		<select type="text" name="jenis">
 		  <option value="Seni Tari">Seni Tari</option>
@@ -17,6 +20,7 @@
 		  <option value="Seni Rupa">Seni Rupa</option>
 		  <option value="Drama">Drama</option>
 		</select><br>
+		<div id="div2">
 		<label class="control-label" for="search">Cari menurut daerah</label>
 		<select type="text" name="daerah">
 		  <option value="Aceh">Aceh</option>
