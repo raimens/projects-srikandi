@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<body background="../img/bar2.jpg">
 <head>
 <title>Sistem Informasi Kesenian Daerah Indonesia</title>
 <link href="img/icon.png" rel="shortcut icon">
@@ -9,6 +8,14 @@
 <link href="css/css_002.css" rel="stylesheet" type="text/css">
 <link href="css/css.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-responsive.css" rel="stylesheet">
+<script type="text/javascript">
+function goFurther(){
+if (document.getElementById("setuju").checked == true)
+document.getElementById("button").disabled = false;
+else
+document.getElementById("button").disabled = true;
+}
+</script>
 </head>
 
 <body class="mainblock">
@@ -19,13 +26,17 @@
   </div>
   
   <div class="container">
-    <div class="row">
+	<div class="row">
 	  <div class="span3">
-		.
+		<div class="sidewell" style="margin-top:0px;">
+		<?php
+		include ("search.php");
+		?>
+		</div>
       </div>
-	  
+
 	  <div class="span9">
-		<form action="function/fungsiaddanggota.php" method="post" name="tambahanggota">
+	  	<form action="function/fungsiaddanggota.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
 		  <h3><strong>Formulir Tambah Anggota</strong></h3><br>
 		  <table width="507">
 		  <tr>
@@ -41,7 +52,7 @@
 		  <td><label>Provinsi</label>&nbsp;</td>
 		  <td>
 		  <label class="control-label" for="daerahmember"></label>
-		  <select>
+		  <select type="text" name="daerah">
 		  <option value="Aceh">Aceh</option>
 		  <option value="Sumatera Utara">Sumatera Utara</option>
 		  <option value="Sumatera Barat">Sumatera Barat</option>
@@ -105,45 +116,27 @@
 		  <textarea name="biografimember" id="biografimember" cols="45" rows="5"></textarea>&nbsp;</td>
 		  </tr>
 		  <tr>
-		  <td><label>Foto</label>&nbsp;</td>
-		  <td><input class="input-large" type="file" name="fotomember" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
-		  </tr>
+			  <td><label>Foto</label>&nbsp;</td>
+			  <td><input class="input-large" type="file" name="nama_file" id="nama_file" accept="image/png,image/jpeg,image/jpg,image/gif"><small><span class="help-block">Max 10MB. jpg / jpeg / png / gif</span></small>&nbsp;</td>
+			</tr>
 		  </table>
-		  <p><input type="checkbox" name="setuju" id="setuju" /> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
-		  <input type="submit" class="small blue button radius" name="button" value="Daftar">
-		  <input class="small white button radius" type="reset" value="Reset">>
+		  <p><input type="checkbox" name="setuju" id="setuju" onclick="goFurther()"/> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
+		  <input type="submit" class="small blue button radius" id="button" name="button" disabled value="Daftar">
+		  <input class="small white button radius" type="reset" value="Reset">
 		</form>
 	  </div>
-	</div>
-    
-	<div class="container" style="padding:30px;">
-	<div class="row">
-	<div class="span10"></div>
-	<div class="span2"></div>
-	</div>
-	</div>
-	
-    <div class="row">
-      <div class="span12">
-		<p style="padding:20px;color:black;"><b>Sistem Informasi Kesenian Daerah Indonesia<span class="pull-right">Kelompok 2</span></b></p>
-      </div>
     </div>
+	
+	<div class="container" style="padding:30px;">
+	  <div class="row">
+		<div class="span10"></div>
+		<div class="span2"></div>
+	  </div>
+	</div>
+  </div>
 
-</div>
-
-<script src="../css/jquery.js"></script>
-<script src="../css/bootstrap.js"></script>
-<script src="../css/bootstrap-transition.htm"></script>
-<script src="../css/bootstrap-alert.js"></script>
-<script src="../css/bootstrap-modal.js"></script>
-<script src="../css/bootstrap-dropdown.js"></script>
-<script src="../css/bootstrap-scrollspy.js"></script>
-<script src="../css/bootstrap-tab.js"></script>
-<script src="../css/bootstrap-tooltip.js"></script>
-<script src="../css/bootstrap-popover.js"></script>
-<script src="../css/bootstrap-button.js"></script>
-<script src="../css/bootstrap-collapse.js"></script>
-<script src="../css/bootstrap-carousel.js"></script>
-<script src="../css/bootstrap-typeahead.js"></script>
+<?php
+include ("js/script.php");
+?>
 </body>
 </html>

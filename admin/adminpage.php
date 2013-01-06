@@ -54,14 +54,15 @@
 	  
 	  <div class="well" style="padding-left:50px;">
 		<?php
-		include ("../function/fungsiviewseniman.php");
-		while ($view = mysql_fetch_array($row)){
-			echo "<ul class='thumbnails'><li class='span2'>
-			<a href='#' class='thumbnail'>
-			<img src='$view[8]' alt=''>
-			</a></li>";
-		}
-		?>
+		include("../function/connect.php");
+		$query=mysql_query("SELECT * FROM member where tipe ='2' ORDER BY USERNAMEMEMBER"); 
+		while ($row = mysql_fetch_row($query)){
+		?><ul class="thumbnails"><li class="span2">
+			<a href="#" class="thumbnail">
+			<img src="<?php echo $row[8]; ?>">
+			</a></li>
+		<?php } ?>
+		
 		<hr>
 	  </div>
 	  </div>

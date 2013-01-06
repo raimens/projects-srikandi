@@ -27,8 +27,8 @@ if($_POST["button"] == "Daftar")
 	$kategorimember=implode(",",$_POST['kategorimember']);
 	move_uploaded_file($lokasi_file, $direktori);
 		$sql = "INSERT INTO member(NAMAMEMBER, ALAMATMEMBER, USERNAMEMEMBER, TIPE, PASSWORDMEMBER, EMAILMEMBER, KATEGORIMEMBER, BIOGRAFIMEMBER, FOTOMEMBER, DAERAHMEMBER)
-		VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', '$daerah', '$direktori')";
+		VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', '$direktori', '$daerah')";
 		$result = mysql_query($sql) or die(mysql_error());;
 		mysql_close();
-}
+} header ("../admin/seniman.php");
 ?>
