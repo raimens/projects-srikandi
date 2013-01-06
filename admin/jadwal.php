@@ -23,6 +23,7 @@
 	  ?>
 
 	  <div id="jadwal" class="span9">
+	  <form action="../function/fungsihapusjadwal.php" method="post">
 	  <h3>Daftar jadwal acara kesenian Indonesia</h3><br>
 	  <a class="small blue button radius" href="tambahjadwal.php">Tambah Jadwal</a>
 	  <input type="submit" class="small red button radius" id="button" name="button" value="Hapus Jadwal"><br><br>
@@ -39,7 +40,7 @@
 			echo "<div class='span6'>
 				  <table width='' border=0>
 				  <tr>
-				  <td width='130'>Nama Jadwal</td>
+				  <td width='130'>Nama User</td>
 				  <td width='400'>: $namajadwal</td>
 				  <td width='20'></td>";
 			?>
@@ -69,6 +70,7 @@
 		?>
 	  </div>
     </div>
+	</form>
 	
 	<div class="container" style="padding:30px;">
 	  <div class="row">
