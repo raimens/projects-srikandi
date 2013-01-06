@@ -107,8 +107,7 @@
 		  <td><input class="input-large" type="file" name="fotomember" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
 		  </tr>
 		  </table>
-		  <p><input type="checkbox" name="setuju" id="setuju" /> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
-		  <input type="submit" class="small blue button radius" name="button" value="Daftar">
+		  <input type="submit" class="small blue button radius" name="button" value="Simpan">
 		  <input class="small white button radius" type="reset" value="Reset">
 		</form>
 	  </div>
