@@ -18,6 +18,5 @@ if($_POST["button"] == "Daftar")
 	$sql = "INSERT INTO member(NAMAMEMBER, ALAMATMEMBER, USERNAMEMEMBER, TIPE, PASSWORDMEMBER, EMAILMEMBER, KATEGORIMEMBER, BIOGRAFIMEMBER, FOTOMEMBER, DAERAHMEMBER) 
 	VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', '$foto', '$daerah')"; 
     $result = mysql_query($sql);
-
-}
+} header('Location: ../admin/seniman.php');
 ?>
