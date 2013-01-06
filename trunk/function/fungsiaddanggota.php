@@ -1,5 +1,6 @@
 <?php  
 include("connect.php");
+include("loginfirstadmin.php");
 
 if($_POST["button"] == "Daftar")  
 {
@@ -11,26 +12,23 @@ if($_POST["button"] == "Daftar")
 	$email = $_POST['emailmember'];
 	$kategorimember = $_POST['kategorimember'];
 	$biografi = $_POST['biografimember'];
+	
+	$lokasi_file = $_FILES['nama_file']['tmp_name'];
+	$nama_file = $_FILES['nama_file']['name'];
+	$tipe_file = $_FILES['nama_file']['type'];
+	$ukuran_file = $_FILES['nama_file']['size'];
+	
+	
 	$daerah = $_POST['daerah'];
+	
+	$nama_baru = preg_replace("/\s+/", "_", $username . "_" . $nama_file);
+	$direktori = "../fotomember/$nama_baru";
+	$MAX_FILE_SIZE = 10000000; //10MB
 	$kategorimember=implode(",",$_POST['kategorimember']);
-	$namafoto = $_FILES['fotomember']['name']; //get the file name
-	$ukuranfoto = $_FILES['fotomember']['size']; //get the size
-	$fotoeror = $_FILES['fotomember']['error']; //get the error when upload
-	if($ukuranfoto > 0 || $fotoeror == 0) {
-		$upload = move_uploaded_file($_FILES['fotomember']['tmp_name'], '../upload'.$namafoto); //save image to the folder
-		if($upload) {
-			echo "<h3>Selamat!</h3>";
-			$sql = "INSERT INTO member(NAMAMEMBER, ALAMATMEMBER, USERNAMEMEMBER, TIPE, PASSWORDMEMBER, EMAILMEMBER, KATEGORIMEMBER, BIOGRAFIMEMBER, FOTOMEMBER, DAERAHMEMBER, FILEFOTO)
-			VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', 'upload/$namafoto', '$daerah', $namafoto)";
-			$result = mysql_query($sql);
-			$ambilfoto = "SELECT fotomember from anggota where filefoto = '$namafoto' limit 1";
-			$hasilfoto = mysql_query($ambilfoto);
-			while ($file = mysql_fetch_array($hasilfoto)){
-				echo "sukses";
-		}
-} else {
-	echo "gagal";
-	}
-}
+	move_uploaded_file($lokasi_file, $direktori);
+		$sql = "INSERT INTO member(NAMAMEMBER, ALAMATMEMBER, USERNAMEMEMBER, TIPE, PASSWORDMEMBER, EMAILMEMBER, KATEGORIMEMBER, BIOGRAFIMEMBER, FOTOMEMBER, DAERAHMEMBER)
+		VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', '$daerah', '$direktori')";
+		$result = mysql_query($sql) or die(mysql_error());;
+		mysql_close();
 }
 ?>
