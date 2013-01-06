@@ -13,21 +13,32 @@
 <body class="mainblock">
   <?php
   include ("adminheader.php");
-  include ("../function/loginfirstadmin.php")
+  include ("../function/loginfirstadmin.php");
+  include ("../function/fungsiviewseniman.php");
+
   ?>
   
   <div class="container">
 	<div class="row">
 	  <?php
 	  include ("sidebar.php");
+	    include ("../function/fungsipagingsenimanadmin.php");
 	  ?>
-
+     
 	  <div id="seniman" class="span9">
+	  <div class="pagination pagination-centered">
+    <ul>
+	<?php 
+		for($i=1; $i<=$jumlahhalaman; $i++){
+			print '<li><a href="http://localhost/Srikandi/projects-srikandi/admin/seniman.php?page='.$i.'">'.$i.'</a></li>';
+		}
+	?>
+	</ul>
+	</div>
 	  <h3>Daftar Seniman Indonesia</h3><br>
 	  <a class="btn" href="tambahanggota.php">Tambah Seniman</a>
 	  <a class="btn" href="">Hapus Seniman</a><br><br>
 	<?php
-    include ("../function/fungsiviewseniman.php");
 	do{   
         list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
         echo "<table width='746' border=0>";
@@ -70,12 +81,16 @@
 		echo "<br>";
     }while($row=mysql_fetch_row($query)); 
 	?>
-        	</div>
+	  	</div>
+	
 	  </div>
+	
     </div>
-
 <?php
 include ("../js/script.php");
 ?>
+	  
+
+
 </body>
 </html>
