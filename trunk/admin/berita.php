@@ -24,18 +24,23 @@
 
 	  <div class="span9">
 	  <h3>Daftar berita mengenai Kesenian dan Kebudayaan Indonesia</h3><br>
-	  <a class="btn" href="tambahberita.php">Tambah Berita</a>
-	  <a class="btn" href="">Hapus Berita</a>
-	<?php
-    include ("../function/fungsiviewberita.php");
-	do{   
+	  <a class="small blue button radius" href="tambahberita.php">Tambah Berita</a>
+	  <input type="submit" class="small red button radius" id="button" name="button" value="Hapus Berita">
+	  <?php
+	  include ("../function/fungsiviewberita.php");
+	  do{   
         list($namamember,$judulberita,$tanggalberita,$jenisberita,$isiberita)=$row;  
-        echo "<table width='746' border=0>";
+        echo "<table width='' border=0>";
 		echo "<tr>";
 		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
         echo "<td width='150'>Nama Pembuat</td>";
 		echo "<td width='404'>: $namamember</td>";
-		echo "<td width='192'><a class='btn btn-danger' href='ubahberita.php'>Ubah berita</a></td>";
+		echo "<td width='20'></td>";
+		?>
+		<form action="ubahberita.php" method="post">
+		<td width='192'><a class='btn btn-info' href='ubahberita.php'>Ubah Riwayat</a></td>
+		</form>
+		<?php
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";

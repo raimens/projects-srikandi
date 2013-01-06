@@ -64,6 +64,6 @@ if($_POST["button"] == "Tambah Jadwal")
 	}*/
 	mysql_close();
 
-	}
+	} header("Location: ../admin/jadwal.php");
 
 ?>

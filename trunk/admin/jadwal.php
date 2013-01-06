@@ -24,42 +24,49 @@
 
 	  <div id="jadwal" class="span9">
 	  <h3>Daftar jadwal acara kesenian Indonesia</h3><br>
-	  <a class="btn" href="tambahjadwal.php">Tambah Jadwal</a>
-	  <a class="btn" href="">Hapus Jadwal</a><br><br>
-	<?php
-    include ("../function/fungsiviewjadwal.php");
-	do{   
-        list($namajadwal, $tanggaljadwal, $tempatjadwal, $deskripsijadwal, $usernamemember)=$row;  
-        echo "<table width='746' border=0>";
-		echo "<tr>";
-		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
-        echo "<td width='150'>Nama Jadwal</td>";
-		echo "<td width='404'>: $namajadwal</td>";
-		echo "<td width='192'><a class='btn btn-danger' href='ubahjadwal.php'>Ubah jadwal</a></td>";
-		echo "</tr>";
-		echo "<tr>";
-		echo "<td></td>";
-		echo "<td>Tanggal</td>";
-		echo "<td>: $tanggaljadwal</td>";
-        echo "</tr>";
-		echo "<tr>";
-		echo "<td></td>";
-		echo "<td>Lokasi Acara</td>";
-		echo "<td>: $tempatjadwal</td>";
-		echo "</tr>";
-		echo "<tr>";
-		echo "<td></td>";
-		echo "<td>Deskripsi Acara</td>";
-		echo "<td>: $deskripsijadwal</td>";
-        echo "</tr>";
-		echo "<tr>";
-		echo "<td></td>";
-		echo "<td>Username</td>";
-		echo "<td>: $usernamemember</td>";		
-		echo "</tr>";
-		echo "<br>";
-    }while($row=mysql_fetch_row($query)); 
-	?>
+	  <a class="small blue button radius" href="tambahjadwal.php">Tambah Jadwal</a>
+	  <input type="submit" class="small red button radius" id="button" name="button" value="Hapus Jadwal"><br><br>
+	  <div class="row">
+		<?php
+		include ("../function/fungsiviewjadwal.php");
+		do{   
+			list($namajadwal, $tanggaljadwal, $tempatjadwal, $deskripsijadwal, $usernamemember, $gambarkegiatan)=$row;  
+			echo "<div class='span3'>
+				  <table width='' border=0>
+				  <td width='30'><input type='checkbox' name='checkbox[]' id='checkbox[]' value='$usernamemember'/></td>
+				  <td width='100'><img src='$gambarkegiatan' width='220' height='150'></td>
+				  </table></div>";
+			echo "<div class='span6'>
+				  <table width='' border=0>
+				  <tr>
+				  <td width='130'>Nama Jadwal</td>
+				  <td width='400'>: $namajadwal</td>
+				  <td width='20'></td>";
+			?>
+			<form action="ubahjadwal.php" method="post">
+			<td width='192'><a class='btn btn-info' href='ubahjadwal.php'>Ubah Jadwal</a></td>
+			</form>
+			<?php
+			echo "</tr>";
+			echo "<tr>";
+			echo "<td>Tanggal</td>";
+			echo "<td>: $tanggaljadwal</td>";
+			echo "</tr>";
+			echo "<tr>";
+			echo "<td>Lokasi Acara</td>";
+			echo "<td>: $tempatjadwal</td>";
+			echo "</tr>";
+			echo "<tr>";
+			echo "<td>Deskripsi Acara</td>";
+			echo "<td>: $deskripsijadwal</td>";
+			echo "</tr>";
+			echo "<tr>";
+			echo "<td>Username</td>";
+			echo "<td>: $usernamemember</td>";		
+			echo "</tr>";
+			echo "<br>";
+		}while($row=mysql_fetch_row($query)); 
+		?>
 	  </div>
     </div>
 	
