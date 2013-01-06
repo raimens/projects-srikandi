@@ -53,6 +53,7 @@
       </div>
 	  
 	  <div class="well" style="padding-left:50px;">
+	  <center><h3>Seniman Indonesia</h3></center>
 		<?php
 		include("../function/connect.php");
 		$query=mysql_query("SELECT * FROM member where tipe ='2' ORDER BY USERNAMEMEMBER"); 
@@ -62,8 +63,6 @@
 			<img src="<?php echo $row[8]; ?>">
 			</a></li>
 		<?php } ?>
-		
-		<hr>
 	  </div>
 	  </div>
     </div>
