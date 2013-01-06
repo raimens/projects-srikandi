@@ -23,7 +23,38 @@
 	  ?>
 
 	  <div class="span9">
-	  <h3>ini tampilan select all tabel berita</h3>
+	  <h3>Daftar berita mengenai Kesenian dan Kebudayaan Indonesia</h3><br>
+	  <a class="btn" href="tambahberita.php">Tambah Berita</a>
+	  <a class="btn" href="">Hapus Berita</a><br><br>
+	<?php
+    include ("");
+	do{   
+        list($namamember, $judulberita, $tanggalberita, $jenisberita, $isiberita)=$row;  
+        echo "<table width='746' border=0>";
+		echo "<tr>";
+		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
+        echo "<td width='150'>Nama Pembuat</td>";
+		echo "<td width='404'>: $namamember</td>";
+		echo "<td width='192'><a class='btn btn-danger' href='ubahberita.php'>Ubah berita</a></td>";
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td></td>";
+		echo "<td>Judul Berita</td>";
+		echo "<td>: $judulberita</td>";
+        echo "</tr>";
+		echo "<tr>";
+		echo "<td></td>";
+		echo "<td>Tanggal Berita</td>";
+		echo "<td>: $tanggalberita</td>";
+		echo "</tr>";
+		echo "<tr>";
+		echo "<td></td>";
+		echo "<td>Jenis Berita</td>";
+		echo "<td>: $jenisberita</td>";
+        echo "</tr>";
+		echo "<br>";
+    }while($row=mysql_fetch_row($query)); 
+	?>
 	  </div>
     </div>
 	

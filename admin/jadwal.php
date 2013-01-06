@@ -29,7 +29,7 @@
 	<?php
     include ("../function/fungsiviewjadwal.php");
 	do{   
-        list( $usernamember, $namajadwal, $tanggaljadwal, $tempatjadwal, $deskripsijadwal)=$row;  
+        list($namajadwal, $tanggaljadwal, $tempatjadwal, $deskripsijadwal, $usernamemember)=$row;  
         echo "<table width='746' border=0>";
 		echo "<tr>";
 		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
@@ -45,7 +45,6 @@
 		echo "<tr>";
 		echo "<td></td>";
 		echo "<td>Lokasi Acara</td>";
-		echo "<td></td>";
 		echo "<td>: $tempatjadwal</td>";
 		echo "</tr>";
 		echo "<tr>";
