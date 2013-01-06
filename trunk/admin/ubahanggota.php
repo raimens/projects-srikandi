@@ -24,7 +24,7 @@
 
 	  <div class="span9">
 	  	<form action="../function/fungsiaddanggota.php" method="post" name="tambahanggota">
-		  <h3><strong>Formulir Tambah Anggota</strong></h3><br>
+		  <h3><strong>Ubah Riwayat Seniman</strong></h3><br>
 		  <table width="507">
 		  <tr>
 		  <td width="150"><label>Nama</label>&nbsp;</td>
