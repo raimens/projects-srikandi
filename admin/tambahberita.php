@@ -42,20 +42,19 @@ tinyMCE.init({
 
 	  <div class="span9">
 	  <h3>Tambah Berita</h3><br><br>
-	  <form id="tambahberita" name="tambahberita" method="post" action="../function/fungsitambahberita.php">
+	  <form id="tambahberita" name="tambahberita" method="post" action="../function/fungsiaddberita.php">
   <table width="460">
     <tr>
       <td width="160"><label>Judul Berita</label></td>
-      <td width="300"><input type="text" name="judulberital" id="judulberita" /></td>
+      <td width="300"><input type="text" name="judulberita" id="judulberita" /></td>
     </tr>
   </table><br>
   <textarea name="isiberita" cols="300" rows="15" > 
-        
   </textarea><br>
   <table width="460">
     <tr>
       <td width="160"><label>Jenis Berita</label>&nbsp;</td>
-      <td width="300"><select type="text" name="jenis">
+      <td width="300"><select type="text" name="jenisberita">
 		  <option value="Seni Tari">Seni Tari</option>
 		  <option value="Seni Musik">Seni Musik</option>
 		  <option value="Seni Rupa">Seni Rupa</option>

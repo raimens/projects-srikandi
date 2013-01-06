@@ -53,7 +53,7 @@
       </div>
 	  
 	  <div class="well" style="padding-left:50px;">
-	  <center><h3>Seniman Indonesia</h3></center>
+	  <center><h3>Seniman Indonesia</h3></center><br>
 		<?php
 		include("../function/connect.php");
 		$query=mysql_query("SELECT * FROM member where tipe ='2' ORDER BY USERNAMEMEMBER"); 

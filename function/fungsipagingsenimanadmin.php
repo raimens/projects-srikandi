@@ -1,7 +1,7 @@
 <?php
 include ("connect.php");
 
-$maxpost=5;
+$maxpost=3;
 
 
 if(!isset($_GET['page'])){
