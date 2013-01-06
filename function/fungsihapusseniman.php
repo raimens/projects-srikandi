@@ -6,13 +6,7 @@ if($_POST["button"]=="Hapus Seniman")
    foreach ($_POST['checkbox'] as $del_id) {
     $sql = "DELETE FROM member WHERE (usernamemember)=('$del_id') ";
     $result = mysql_query($sql) or die(mysql_error()); 
-	if($result){
-	header
-	}else{
-	header{
-	}
-	}
-	}
+		}
 }}     
      
 ?>

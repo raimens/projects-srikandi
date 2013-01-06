@@ -31,7 +31,7 @@ document.getElementById("button").disabled = true;
 	  ?>
 
 	  <div class="span9">
-	  	<form action="../function/fungsiaddanggota.php" method="post" name="tambahanggota">
+	  	<form action="../function/fungsiaddanggota1.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
 		  <h3><strong>Formulir Tambah Anggota</strong></h3><br>
 		  <table width="507">
 		  <tr>
@@ -111,9 +111,9 @@ document.getElementById("button").disabled = true;
 		  <textarea name="biografimember" id="biografimember" cols="45" rows="5"></textarea>&nbsp;</td>
 		  </tr>
 		  <tr>
-		  <td><label>Foto</label>&nbsp;</td>
-		  <td><input class="input-large" type="file" name="fotomember"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
-		  </tr>
+			  <td><label>Foto</label>&nbsp;</td>
+			  <td><input class="input-large" type="file" name="nama_file" id="nama_file" accept="image/png,image/jpeg,image/jpg,image/gif"><small><span class="help-block">Max 10MB. jpg / jpeg / png / gif</span></small>&nbsp;</td>
+			</tr>
 		  </table>
 		  <p><input type="checkbox" name="setuju" id="setuju" onclick="goFurther()"/> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
 		  <input type="submit" class="small blue button radius" id="button" name="button" disabled value="Daftar">

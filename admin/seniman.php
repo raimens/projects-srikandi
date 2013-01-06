@@ -48,7 +48,11 @@
         echo "<td width='150'>Nama</td>";
 		echo "<td width='404'>: $namamember</td>";
 		echo "<td width='10'></td>";
-		echo "<td width='192'><a class='btn btn-info' href='ubahanggota.php'>Ubah Riwayat</a></td>";
+		?>
+		<form action="ubahanggota.php" method="post">
+		<td width='192'><a class='btn btn-info' href='ubahanggota.php'>Ubah Riwayat</a></td>
+		</form>
+		<?php
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";
