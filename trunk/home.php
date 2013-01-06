@@ -144,19 +144,8 @@
 
 </div>
 
-<script src="css/jquery.js"></script>
-<script src="css/bootstrap.js"></script>
-<script src="css/bootstrap-transition.htm"></script>
-<script src="css/bootstrap-alert.js"></script>
-<script src="css/bootstrap-modal.js"></script>
-<script src="css/bootstrap-dropdown.js"></script>
-<script src="css/bootstrap-scrollspy.js"></script>
-<script src="css/bootstrap-tab.js"></script>
-<script src="css/bootstrap-tooltip.js"></script>
-<script src="css/bootstrap-popover.js"></script>
-<script src="css/bootstrap-button.js"></script>
-<script src="css/bootstrap-collapse.js"></script>
-<script src="css/bootstrap-carousel.js"></script>
-<script src="css/bootstrap-typeahead.js"></script>
+<?php
+include ("js/script.php");
+?>
 </body>
 </html>

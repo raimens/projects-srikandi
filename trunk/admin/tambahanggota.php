@@ -21,7 +21,7 @@ document.getElementById("button").disabled = true;
 <body class="mainblock">
   <?php
   include ("adminheader.php");
-  include ("../function/loginfirstadmin.php")
+  include ("function/loginfirstadmin.php")
   ?>
   
   <div class="container">
@@ -31,7 +31,7 @@ document.getElementById("button").disabled = true;
 	  ?>
 
 	  <div class="span9">
-	  	<form action="../function/fungsiaddanggota.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
+	  	<form action="function/fungsiaddseniman.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
 		  <h3><strong>Formulir Tambah Anggota</strong></h3><br>
 		  <table width="507">
 		  <tr>

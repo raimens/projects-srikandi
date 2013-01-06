@@ -62,7 +62,10 @@
 			<a href="#" class="thumbnail">
 			<img src="<?php echo $row[8]; ?>">
 			</a></li>
-		<?php } ?>
+		<?php
+		}
+		?>
+		
 	  </div>
 	  </div>
     </div>

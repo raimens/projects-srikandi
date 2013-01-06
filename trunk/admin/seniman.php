@@ -90,8 +90,8 @@
     }while($row=mysql_fetch_row($query)); 
 	?>
 	  	</div>
-	
-	  </div>
+	  </form>
+	</div>
 	
     </div>
 <?php
