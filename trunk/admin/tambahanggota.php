@@ -8,6 +8,14 @@
 <link href="../css/css_002.css" rel="stylesheet" type="text/css">
 <link href="../css/css.css" rel="stylesheet" type="text/css">
 <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+<script type="text/javascript">
+function goFurther(){
+if (document.getElementById("setuju").checked == true)
+document.getElementById("button").disabled = false;
+else
+document.getElementById("button").disabled = true;
+}
+</script>
 </head>
 
 <body class="mainblock">
@@ -107,8 +115,8 @@
 		  <td><input class="input-large" type="file" name="fotomember" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
 		  </tr>
 		  </table>
-		  <p><input type="checkbox" name="setuju" id="setuju" /> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
-		  <input type="submit" class="small blue button radius" name="button" value="Daftar">
+		  <p><input type="checkbox" name="setuju" id="setuju" onclick="goFurther()"/> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
+		  <input type="submit" class="small blue button radius" id="button" name="button" disabled value="Daftar">
 		  <input class="small white button radius" type="reset" value="Reset">
 		</form>
 	  </div>
