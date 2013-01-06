@@ -110,8 +110,8 @@
 		  </tr>
 		  </table>
 		  <p><input type="checkbox" name="setuju" id="setuju" /> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
-		  <input type="submit" class="btn btn-primary" name="button" value="Daftar">
-		  <input class="btn" type="reset" value="Reset">
+		  <input type="submit" class="small blue button radius" name="button" value="Daftar">
+		  <input class="small white button radius" type="reset" value="Reset">>
 		</form>
 	  </div>
 	</div>
