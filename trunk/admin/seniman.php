@@ -30,7 +30,7 @@
     <ul>
 	<?php 
 		for($i=1; $i<=$jumlahhalaman; $i++){
-			print '<li><a href="http://localhost/Srikandi/projects-srikandi/admin/seniman.php?page='.$i.'">'.$i.'</a></li>';
+			print '<li><a href="seniman.php?page='.$i.'">'.$i.'</a></li>';
 		}
 	?>
 	</ul>
