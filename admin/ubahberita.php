@@ -41,7 +41,7 @@ tinyMCE.init({
 	  ?>
 
 	  <div class="span9">
-	  <h3>Tambah Berita</h3><br><br>
+	  <h3>Ubah Berita Kesenian Indonesia</h3><br>
 	  <form id="tambahberita" name="tambahberita" method="post" action="../function/fungsitambahberita.php">
   <table width="460">
     <tr>

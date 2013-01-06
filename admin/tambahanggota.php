@@ -112,7 +112,7 @@ document.getElementById("button").disabled = true;
 		  </tr>
 		  <tr>
 		  <td><label>Foto</label>&nbsp;</td>
-		  <td><input class="input-large" type="file" name="fotomember" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
+		  <td><input class="input-large" type="file" name="fotomember"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
 		  </tr>
 		  </table>
 		  <p><input type="checkbox" name="setuju" id="setuju" onclick="goFurther()"/> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>

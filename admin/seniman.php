@@ -46,7 +46,7 @@
 		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
         echo "<td width='150'>Nama</td>";
 		echo "<td width='404'>: $namamember</td>";
-		echo "<td width='192'><a class='btn btn-danger' href=''>Ubah Riwayat</a></td>";
+		echo "<td width='192'><a class='btn btn-danger' href='ubahanggota.php'>Ubah Riwayat</a></td>";
 		echo "</tr>";
 		echo "<tr>";
 		echo "<td></td>";

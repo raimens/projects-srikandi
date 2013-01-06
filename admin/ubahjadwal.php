@@ -24,7 +24,7 @@
 
 	  <div class="span9">
 		<form enctype="multipart/form-data" action="../function/fungsiaddjadwal.php" method="post" name="tambahjadwal">
-			<h3><strong>Tambah Jadwal</strong></h3><br>
+			<h3><strong>Ubah Jadwal Acara</strong></h3><br>
 			<table width="507">
 			<tr>
 			  <td width="150"><label>Nama Acara</label>&nbsp;</td>

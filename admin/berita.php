@@ -25,11 +25,11 @@
 	  <div class="span9">
 	  <h3>Daftar berita mengenai Kesenian dan Kebudayaan Indonesia</h3><br>
 	  <a class="btn" href="tambahberita.php">Tambah Berita</a>
-	  <a class="btn" href="">Hapus Berita</a><br><br>
+	  <a class="btn" href="">Hapus Berita</a>
 	<?php
-    include ("");
+    include ("../function/fungsiviewberita.php");
 	do{   
-        list($namamember, $judulberita, $tanggalberita, $jenisberita, $isiberita)=$row;  
+        list($namamember,$judulberita,$tanggalberita,$jenisberita,$isiberita)=$row;  
         echo "<table width='746' border=0>";
 		echo "<tr>";
 		echo "<td width='40'><input type='checkbox' name='check' id='check'/></td>";
