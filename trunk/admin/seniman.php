@@ -38,15 +38,22 @@
 	  <h3>Daftar Seniman Indonesia</h3><br>
 	  <a class="small blue button radius" href="tambahanggota.php">Tambah Seniman</a>
 	  <input type="submit" class="small red button radius" id="button" name="button" value="Hapus Seniman"><br><br>
-	<?php
-	do{   
-        list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
-        echo "<table width='792' border=0>";
-		echo "<tr>";
-		echo "<td width='40'><input type='checkbox' name='checkbox[]' id='checkbox[]' value='$usernamemember'/></td>";
-        echo "<td width='150'>Nama</td>";
-		echo "<td width='404'>: $namamember</td>";
-		echo "<td width='10'></td>";
+	  <div class="row">
+		<?php
+		do {
+		  list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
+		echo "<div class='span3'>
+			  <table width='' border=0>
+			  <td width='30'><input type='checkbox' name='checkbox[]' id='checkbox[]' value='$usernamemember'/></td>
+			  <td width='100'><img src='$fotomember' width='220' height='150'></td>
+			  </table>
+			  </div>";
+		echo "<div class='span6'>
+			  <table width='' border=0>
+			  <tr>
+			  <td width='130'>Nama</td>
+			  <td width='400'>: $namamember</td>
+			  <td width='20'></td>";
 		?>
 		<form action="ubahanggota.php" method="post">
 		<td width='192'><a class='btn btn-info' href='ubahanggota.php'>Ubah Riwayat</a></td>
@@ -54,36 +61,32 @@
 		<?php
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td></td>";
 		echo "<td>Alamat</td>";
 		echo "<td>: $alamatmember</td>";
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td></td>";
 		echo "<td>Asal Member</td>";
 		echo "<td>: $daerahmember</td>";
         echo "</tr>";
 		echo "<tr>";
-		echo "<td></td>";
 		echo "<td>Username</td>";
 		echo "<td>: $usernamemember</td>";		
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td></td>";
 		echo "<td>Email</td>";
 		echo "<td>: $emailmember</td>";
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td></td>";
 		echo "<td>Kategori</td>";
 		echo "<td>: $kategorimember</td>";
 		echo "</tr>";
 		echo "<tr>";
-		echo "<td></td>";
 		echo "<td>Biografi</td>";
 		echo "<td>: $biografimember</td>";
 		echo "</tr>";
+		echo "</table>";
 		echo "<br>";
+		echo "</div>";
     }while($row=mysql_fetch_row($query)); 
 	?>
 	  	</div>
