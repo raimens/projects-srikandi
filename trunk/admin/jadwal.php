@@ -24,7 +24,7 @@
 
 	  <div id="jadwal" class="span9">
 	  <h3>Daftar jadwal acara kesenian Indonesia</h3><br>
-	  <a class="btn" href="tambahajadwal.php">Tambah Jadwal</a>
+	  <a class="btn" href="tambahjadwal.php">Tambah Jadwal</a>
 	  <a class="btn" href="">Hapus Jadwal</a><br><br>
 	<?php
     include ("../function/fungsiviewjadwal.php");
