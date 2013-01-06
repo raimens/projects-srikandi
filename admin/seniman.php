@@ -15,14 +15,13 @@
   include ("adminheader.php");
   include ("../function/loginfirstadmin.php");
   include ("../function/fungsiviewseniman.php");
-
   ?>
   
   <div class="container">
 	<div class="row">
 	  <?php
 	  include ("sidebar.php");
-	    include ("../function/fungsipagingsenimanadmin.php");
+	  include ("../function/fungsipagingsenimanadmin.php");
 	  ?>
      
 	  <div id="seniman" class="span9">

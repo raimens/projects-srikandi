@@ -23,7 +23,47 @@
 	  ?>
 
 	  <div class="span9">
-	  <h3>ini tampilan home admin</h3>
+	  <h3>Selamat datang di SRIKANDI</h3><br><br>
+	  <div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+		  <div class="item active"><img src="../img/slide.jpg" alt="">
+			<div class="container">
+			<div class="carousel-caption">
+			<p class="lead">SRIKANDI ini itu lalala</p>
+			</div>
+			</div>
+		  </div>
+		  <div class="item"><img src="../img/slide2.jpg" alt="">
+			<div class="container">
+			<div class="carousel-caption">
+			<p class="lead">SRIKANDI bumbumski</p>
+			</div>
+			</div>
+		  </div>
+		  <div class="item"><img src="../img/slide3.jpg" alt="">
+			<div class="container">
+			<div class="carousel-caption">
+			<p class="lead">SRIKANDI nomnomnom</p>
+			</div>
+			</div>
+		  </div>
+		</div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+	  
+	  <div class="well" style="padding-left:50px;">
+		<?php
+		include ("../function/fungsiviewseniman.php");
+		while ($view = mysql_fetch_array($row)){
+			echo "<ul class='thumbnails'><li class='span2'>
+			<a href='#' class='thumbnail'>
+			<img src='$view[8]' alt=''>
+			</a></li>";
+		}
+		?>
+		<hr>
+	  </div>
 	  </div>
     </div>
 	
