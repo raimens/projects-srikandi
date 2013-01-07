@@ -58,10 +58,16 @@
 		include("../function/connect.php");
 		$query=mysql_query("SELECT * FROM member where tipe ='2' ORDER BY USERNAMEMEMBER"); 
 		while ($row = mysql_fetch_row($query)){
-		?><ul class="thumbnails"><li class="span2">
-			<a href="#" class="thumbnail">
-			<img src="<?php echo $row[8]; ?>">
-			</a></li>
+		?>
+		<div class="row">
+		  <div class="span2">
+		  <tr>
+		  <td><img src="<?php echo $row[8]; ?>"><br></td>
+		  </tr>
+		  <tr>
+		  <td><center><p><?php echo $row[0]; ?></p></center></td>
+		  </tr>
+		  </div>
 		<?php
 		}
 		?>
