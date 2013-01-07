@@ -34,10 +34,22 @@
 	?>
 	</ul>
 	</div>
-	<form action="../function/fungsihapusseniman.php" method="post">
+	<form method="post" name="seniman" action="../function/fungsihapusseniman.php">
 	  <h3>Daftar Seniman Indonesia</h3><br>
 	  <a class="small blue button radius" href="tambahanggota.php">Tambah Seniman</a>
 	  <input type="submit" class="small red button radius" id="button" name="button" value="Hapus Seniman"><br><br>
+<<<<<<< .mine
+	<?php
+	do{   
+        list($namamember,$alamatmember,$usernamemember,$emailmember,$kategorimember,$biografimember,$fotomember,$daerahmember)=$row;  
+        echo "<table width='792' border=0>";
+		echo "<tr>";
+		echo "<td width='40'><input type='checkbox' name='checkbox[]' id='checkbox[]' value='$usernamemember'/></td>";
+        echo "<td width='150'>Nama</td>";
+		echo "<td width='404'>: $namamember</td>";
+		echo "<td width='10'></td>";?>
+		<td width="192"><a class="small pink button radius" name="ubah" id="ubah" href="ubahanggota.php?USERNAMEMEMBER=<?php echo $usernamemember;?>">Ubah Riwayat</a></td>
+=======
 	  <div class="row">
 		<?php
 		do {
@@ -58,6 +70,7 @@
 		<form action="ubahanggota.php" method="post">
 		<td width='192'><a class='btn btn-info' href='ubahanggota.php'>Ubah Riwayat</a></td>
 		</form>
+>>>>>>> .r84
 		<?php
 		echo "</tr>";
 		echo "<tr>";
@@ -95,6 +108,7 @@
 	
     </div>
 <?php
+//include ("../function/fungsihapusseniman.php");
 include ("../js/script.php");
 ?>
 	  

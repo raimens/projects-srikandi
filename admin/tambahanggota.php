@@ -31,7 +31,11 @@ document.getElementById("button").disabled = true;
 	  ?>
 
 	  <div class="span9">
+<<<<<<< .mine
+	  	<form action="../function/fungsiaddanggota.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
+=======
 	  	<form action="../function/fungsiaddseniman.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
+>>>>>>> .r84
 		  <h3><strong>Formulir Tambah Anggota</strong></h3><br>
 		  <table width="507">
 		  <tr>
@@ -86,7 +90,7 @@ document.getElementById("button").disabled = true;
 		  </td>
 		  </tr>
 		  <tr>
-		  <td><label>Username</label>&nbsp;</td>
+		  <td><label>Username<font color="red">*</font></label>&nbsp;</td>
 		  <td><input type="text" name="usernamemember" id="usernamemember" />&nbsp;</td>
 		  </tr>
 		  <tr>
@@ -115,7 +119,8 @@ document.getElementById("button").disabled = true;
 			  <td><input class="input-large" type="file" name="nama_file" id="nama_file" accept="image/png,image/jpeg,image/jpg,image/gif"><small><span class="help-block">Max 10MB. jpg / jpeg / png / gif</span></small>&nbsp;</td>
 			</tr>
 		  </table>
-		  <p><input type="checkbox" name="setuju" id="setuju" onclick="goFurther()"/> Setuju dengan syarat dan ketentuan pendaftaran  </p><br>
+		  <p><input type="checkbox" name="setuju" id="setuju" onclick="goFurther()"/> Setuju dengan syarat dan ketentuan pendaftaran <br><br>
+		  <small><font color = "red">*pengisian username hanya dilakukan satu kali tidak dapat diubah</font></small></p><br>
 		  <input type="submit" class="small blue button radius" id="button" name="button" disabled value="Daftar">
 		  <input class="small white button radius" type="reset" value="Reset">
 		</form>
