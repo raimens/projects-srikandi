@@ -13,7 +13,8 @@
 <body class="mainblock">
   <?php
   include ("adminheader.php");
-  include ("../function/loginfirstadmin.php")
+  include ("../function/loginfirstadmin.php");
+  include ("../function/fungsitampilubahanggotaadmin.php");
   ?>
   
   <div class="container">
@@ -23,17 +24,17 @@
 	  ?>
 
 	  <div class="span9">
-	  	<form action="../function/fungsiaddanggota.php" method="post" name="tambahanggota">
+	  	<form action="../function/fungsiubahanggota.php" method="post" name="ubahanggota">
 		  <h3><strong>Ubah Riwayat Seniman</strong></h3><br>
 		  <table width="507">
 		  <tr>
 		  <td width="150"><label>Nama</label>&nbsp;</td>
 		  <td width="345"><label for="namamember"></label>
-		  <input type="text" name="namamember" id="namamember" /></td>
+		  <input type="text" name="namamember" id="namamember" value="<?php echo $data[0]?>" /></td>
 		  </tr>
 		  <tr>
 		  <td><label>Alamat</label>&nbsp;</td>
-		  <td><input type="text" name="alamatmember" id="alamatmember" />&nbsp;</td>
+		  <td><input type="text" name="alamatmember" id="alamatmember" value="<?php echo $data[1]?>" />&nbsp;</td>
 		  </tr>
 		  <tr>
 		  <td><label>Provinsi</label>&nbsp;</td>
@@ -79,15 +80,17 @@
 		  </tr>
 		  <tr>
 		  <td><label>Username</label>&nbsp;</td>
-		  <td><input type="text" name="usernamemember" id="usernamemember" />&nbsp;</td>
+		  <td><input type="text" name="usernamemember" id="usernamemember" disabled value="<?php echo $data[2]?>"/>&nbsp;</td>
 		  </tr>
 		  <tr>
-		  <td><label>Password</label>&nbsp;</td>
-		  <td><input type="password" name="passwordmember" id="passwordmember" />&nbsp;</td>
+		  <td><label>Old Password</label>&nbsp;</td>
+		  <td><input type="text" name="passwordmember" id="passwordmember" value="<?php echo $data[3]?>" />&nbsp;</td>
 		  </tr>
+		  <td><label>New Password</label>&nbsp;</td>
+		  <td><input type="password" name="passwordmember" id="passwordmember" />&nbsp;</td>
 		  <tr>
 		  <td><label>Email</label>&nbsp;</td>
-		  <td><input type="email" name="emailmember" id="emailmember" />&nbsp;</td>
+		  <td><input type="email" name="emailmember" id="emailmember" value="<?php echo $data[4]?>"/>&nbsp;</td>
 		  </tr>
 		  <tr>
 		  <td><label>Kategori Member</label>&nbsp;</td>
@@ -100,14 +103,14 @@
 		  <tr>
 		  <td><label>Biografi</label>&nbsp;</td>
 		  <td><label for="biografimember"></label>
-		  <textarea name="biografimember" id="biografimember" cols="45" rows="5"></textarea>&nbsp;</td>
+		  <textarea name="biografimember" id="biografimember" value="<?php echo $data[6]?>" cols="45" rows="5"></textarea>&nbsp;</td>
 		  </tr>
 		  <tr>
 		  <td><label>Foto</label>&nbsp;</td>
 		  <td><input class="input-large" type="file" name="fotomember" accept="image/png,image/jpeg,image/jpg"><small><span class="help-block">Max 200 kb. jpg / jpeg / png</span></small>&nbsp;</td>
 		  </tr>
 		  </table>
-		  <input type="submit" class="small blue button radius" name="button" value="Simpan">
+		  <input type="submit" class="small blue button radius" name="button" value="Ubah">
 		  <input class="small white button radius" type="reset" value="Reset">
 		</form>
 	  </div>
