@@ -103,7 +103,7 @@
 		  <tr>
 		  <td><label>Biografi</label>&nbsp;</td>
 		  <td><label for="biografimember"></label>
-		  <textarea name="biografimember" id="biografimember" value="<?php echo $data[6]?>" cols="45" rows="5"></textarea>&nbsp;</td>
+		  <textarea name="biografimember" id="biografimember" cols="45" rows="5"><?php echo $data[6]?></textarea>&nbsp;</td>
 		  </tr>
 		  <tr>
 		  <td><label>Foto</label>&nbsp;</td>
