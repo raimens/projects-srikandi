@@ -33,6 +33,27 @@
       </div>
 	  
 	  <div class="span9">
+		<div class="well" style="padding-left:50px;">
+		<center><h3>Seniman Indonesia</h3></center><br>
+		<?php
+		include("../function/connect.php");
+		$query=mysql_query("SELECT * FROM member where tipe ='2' ORDER BY USERNAMEMEMBER"); 
+		while ($row = mysql_fetch_row($query)){
+		?>
+		<div class="row">
+		  <div class="span2">
+		  <tr>
+		  <td><img src="<?php echo $row[8]; ?>"><br></td>
+		  </tr>
+		  <tr>
+		  <td><center><p><?php echo $row[0]; ?></p></center></td>
+		  </tr>
+		  </div>
+		<?php
+		}
+		?>
+		</div>
+		</div>
 	  
 	  </div>
 	</div>
@@ -52,19 +73,8 @@
 
 </div>
 
-<script src="../css/jquery.js"></script>
-<script src="../css/bootstrap.js"></script>
-<script src="../css/bootstrap-transition.htm"></script>
-<script src="../css/bootstrap-alert.js"></script>
-<script src="../css/bootstrap-modal.js"></script>
-<script src="../css/bootstrap-dropdown.js"></script>
-<script src="../css/bootstrap-scrollspy.js"></script>
-<script src="../css/bootstrap-tab.js"></script>
-<script src="../css/bootstrap-tooltip.js"></script>
-<script src="../css/bootstrap-popover.js"></script>
-<script src="../css/bootstrap-button.js"></script>
-<script src="../css/bootstrap-collapse.js"></script>
-<script src="../css/bootstrap-carousel.js"></script>
-<script src="../css/bootstrap-typeahead.js"></script>
+<?php
+include ("../js/script.php");
+?>
 </body>
 </html>

@@ -33,7 +33,7 @@
       </div>
 	  
 	  <div class="span9">
-	  
+		<a class="small blue button radius" href="tambahberita.php">Tambah Berita</a>	  
 	  </div>
 	</div>
     

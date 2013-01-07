@@ -25,7 +25,13 @@
 		<?php
 		include ("welcome.php");
 		?>
+		<div class="sidewell" style="margin-top:0px;">
+		<?php
+		include ("../search.php");
+		?>
+	  </div>
       </div>
+	  
 	  
 	  <div class="span9">
 		<form enctype="multipart/form-data" action="../function/fungsiaddjadwal.php" method="post" name="tambahjadwal">
