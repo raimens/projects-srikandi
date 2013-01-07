@@ -31,11 +31,9 @@ document.getElementById("button").disabled = true;
 	  ?>
 
 	  <div class="span9">
-<<<<<<< .mine
+
 	  	<form action="../function/fungsiaddanggota.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
-=======
-	  	<form action="../function/fungsiaddseniman.php" method="POST" name="tambahanggota" enctype="multipart/form-data">
->>>>>>> .r84
+
 		  <h3><strong>Formulir Tambah Anggota</strong></h3><br>
 		  <table width="507">
 		  <tr>
