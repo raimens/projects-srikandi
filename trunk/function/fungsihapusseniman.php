@@ -9,4 +9,5 @@ if($_POST["button"] == "Hapus Seniman")
     $sql = "DELETE FROM member WHERE (usernamemember)=('$del_id') ";
     $result = mysql_query($sql) or die(mysql_error()); 
 		}
-
+	}
+} header ("Location: ../admin/seniman.php?sukses");
