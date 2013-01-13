@@ -63,7 +63,7 @@ tinyMCE.init({
 		</select></td>
     </tr>
   </table><br>
-  <input type="submit" class="small blue button radius" name="button" value="Tambah Berita">
+  <input type="submit" class="small blue button radius" name="button" value="Ubah Berita">
   <input class="small white button radius" type="reset" value="Reset">
 </form>
 	  </div>

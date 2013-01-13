@@ -14,5 +14,5 @@ if($_POST["button"] == "Tambah Berita")
 	$sql = "INSERT INTO berita(USERNAMEMEMBER, JUDULBERITA, ISIBERITA, TANGGALBERITA, JENISBERITA) 
 	VALUES ('$username','$judul','$isi','$datetime','$jenisberita')"; 
     $result = mysql_query($sql);
-} header("Location: ../admin/berita.php");
+} header("Location: ../admin/berita.php?sukses");
 ?>
