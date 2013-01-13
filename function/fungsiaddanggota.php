@@ -31,4 +31,5 @@ if($_POST["button"] == "Daftar")
 		VALUES ('$nama', '$alamat', '$username', '$tipe', '$password', '$email', '$kategorimember', '$biografi', '$direktori', '$daerah')";
 		$result = mysql_query($sql) or die(mysql_error());;
 		mysql_close();
-} header ("Location: ../admin/seniman.php?sukses);
+} header ("Location: ../admin/seniman.php?sukses");
+?>
